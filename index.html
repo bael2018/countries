@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header_upper">
+            <div class="header_upper__child">
+                <input placeholder="Name" class="searchName" type="text" name="search">
+            </div>
+            <div class="header_upper__child">
+                <input placeholder="Capital" class="searchCapital" type="text" name="search">
+            </div>
+            <div class="header_upper__child header_upper__child_alt">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="category">
+                    <ul>
+                        <li onclick="showAll()">ALL COUNTRIES</li>
+                        <li onclick="showRegion('Africa')">AFRICA</li>
+                        <li onclick="showRegion('Americas')">AMERICAS</li>
+                        <li onclick="showRegion('Asia')">ASIA</li>
+                        <li onclick="showRegion('Europe')">EUROPE</li>
+                        <li onclick="showRegion('Oceania')">OCEANIA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="card_container"></section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
